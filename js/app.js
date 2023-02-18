@@ -26,7 +26,9 @@ document
     const triangleTotalArea =
       0.5 * firstInputFieldNumberToString * secondInputFieldNumberToString;
 
-    console.log(triangleTotalArea);
+    // if (triangleTotalArea < 0) {
+    //   window.alert("please type number");
+    // }
 
     const areaListTitle = document.getElementById("first-list-title");
     const listTitle = (areaListTitle.innerText = "Triangle");
@@ -77,6 +79,34 @@ document
     const listTitle = (areaListTitle.innerText = "Rectangle");
 
     const areaList = document.getElementById("second-rectangle-total-area");
+    console.log(rectangleTotalArea);
+    areaList.innerText = rectangleTotalArea + "cm";
+  });
+
+// pera final total area
+
+document
+  .getElementById("pera-area-calculate-btn")
+  .addEventListener("click", function () {
+    const rectangleFirstInputField = document.getElementById(
+      "pera-first-input-field"
+    );
+    const firstInputFieldNumber = rectangleFirstInputField.value;
+    const firstInputFieldNumberToString = parseInt(firstInputFieldNumber);
+
+    const rectangleSecondInputField = document.getElementById(
+      "pera-second-input-field"
+    );
+    const secondInputFieldNumber = rectangleSecondInputField.value;
+    const secondInputFieldNumberToString = parseInt(secondInputFieldNumber);
+
+    const rectangleTotalArea =
+      firstInputFieldNumberToString * secondInputFieldNumberToString;
+
+    const areaListTitle = document.getElementById("pera-list-title");
+    const listTitle = (areaListTitle.innerText = "Parallelogram");
+
+    const areaList = document.getElementById("second-pera-total-area");
     console.log(rectangleTotalArea);
     areaList.innerText = rectangleTotalArea + "cm";
   });
