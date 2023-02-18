@@ -107,12 +107,16 @@ header #header-blog-btn button {
 }
 
 /* area list calculation */
-#final-total-area .area-list-btn {
+/* #final-total-area .area-list-btn {
   font-size: 12px;
   padding: 6px;
+} */
+
+.shape .shape-box .metter-btn {
+  font-size: 12px;
+  padding: 4px 20px;
 }
 
-/* js */
-#area-list {
-  display: none;
+.shape-box .input-table {
+  overflow: auto;
 }
