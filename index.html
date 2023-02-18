@@ -54,7 +54,59 @@
       <section class="shape mb-5 pb-4">
         <div class="container">
           <div class="shape-main">
-            <div class="row g-4 mt-3 text-center"></div>
+            <div class="row g-4 mt-3 text-center">
+              <div class="col-3">
+                <div class="shape-box">
+                  <img src="./images/triangle.png" class="w-75" alt="" />
+                  <h3 class="shape-title">Triangle</h3>
+                  <p class="shape-sub-title">Area (A) = 0.5 × b × h</p>
+                  <div class="input-box d-flex justify-content-between">
+                    <div>
+                      <input
+                        class="w-50"
+                        type="number"
+                        name=""
+                        id="first-input-field"
+                        placeholder="b"
+                      />
+                      <span>cm</span>
+                    </div>
+
+                    <div>
+                      <input
+                        class="w-50"
+                        type="number"
+                        name=""
+                        id="second-input-field"
+                        placeholder="h"
+                      />
+                      <span>cm</span>
+                    </div>
+                  </div>
+                  <div id="area-calculate-btn" class="shape-area-cal-btn">
+                    <button>Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div id="final-total-area" class="conatiner shape-box">
+                  <h3 class="shape-title area-title">
+                    <u>Area Calculation</u>
+                  </h3>
+
+                  <ol
+                    id="area-list"
+                    class="d-flex gap-4 align-items-center justify-content-between"
+                  >
+                    <li id="list-title"></li>
+                    <p id="triangle-total-area"></p>
+                    <button class="area-list-btn">
+                      Covert to m<sup>2</sup>
+                    </button>
+                  </ol>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
