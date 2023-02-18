@@ -28,3 +28,12 @@ function getData(shapeTitle, inputFieldOne, inputFieldTow) {
   };
   return shape;
 }
+
+// common function to get bg color
+// function randomColor() {
+//   let color = [];
+//   for (let i = 0; i < 3; i++) {
+//     color.push(Math.floor(Math.random() * 256));
+//   }
+//   return "rgb(" + color.join(", ") + ")";
+// }

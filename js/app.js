@@ -27,22 +27,23 @@ document
       "triangle-second-input-filed"
     ).value;
 
-    // if (
-    //   triangleFirstInput == "" ||
-    //   triangleSecondInput == "" ||
-    //   triangleFirstInput <= 0 ||
-    //   triangleSecondInput <= 0 ||
-    //   typeof triangleFirstInput !== "string" ||
-    //   typeof triangleFirstInput !== "string"
-    // ) {
-    //   return alert("please enter any valid number");
-    // }
+    if (
+      triangleFirstInput == "" ||
+      triangleSecondInput == "" ||
+      triangleFirstInput <= 0 ||
+      triangleSecondInput <= 0 ||
+      typeof triangleFirstInput !== "string" ||
+      typeof triangleFirstInput !== "string"
+    ) {
+      return alert("please enter any valid number");
+    }
 
     const triangleTotalArea =
       0.5 * parseInt(triangleFirstInput) * parseInt(triangleSecondInput);
+    const triangleToDecimal = triangleTotalArea.toFixed(2);
 
     // show displayData
-    displayData(triangleShapeName, triangleTotalArea);
+    displayData(triangleShapeName, triangleToDecimal);
   });
 
 // second card
@@ -77,9 +78,10 @@ document
 
     const rectangleTotalArea =
       parseInt(rectangleFirstInput) * parseInt(rectangleSecondInput);
+    const rectangleToDecimal = rectangleTotalArea.toFixed(2);
 
     // show displayData
-    displayData(rectangleShapeName, rectangleTotalArea);
+    displayData(rectangleShapeName, rectangleToDecimal);
   });
 
 // third card
@@ -109,9 +111,10 @@ document.getElementById("pera-card-btn").addEventListener("click", function () {
   }
 
   const peraTotalArea = parseInt(peraFirstInput) * parseInt(peraSecondInput);
+  const peraToDecimal = peraTotalArea.toFixed(2);
 
   // show displayData
-  displayData(peraShapeName, peraTotalArea);
+  displayData(peraShapeName, peraToDecimal);
 });
 
 // fourth card
@@ -141,9 +144,10 @@ document
 
     const rhombusTotalArea =
       0.5 * parseInt(shape.firstInput) * parseInt(shape.secondInput);
+    const rhombusToDecimal = rhombusTotalArea.toFixed(2);
 
     // show displayData
-    displayData(shape.shapeName, rhombusTotalArea);
+    displayData(shape.shapeName, rhombusToDecimal);
   });
 
 // fiveth card
@@ -173,9 +177,10 @@ document
 
     const pentagonTotalArea =
       0.5 * parseInt(shape.firstInput) * parseInt(shape.secondInput);
+    const pentagonToDecimal = pentagonTotalArea.toFixed(2);
 
     // show displayData
-    displayData(shape.shapeName, pentagonTotalArea);
+    displayData(shape.shapeName, pentagonToDecimal);
   });
 
 // sixth card
@@ -204,8 +209,63 @@ document
     }
 
     const ellipseTotalArea =
-      0.5 * parseInt(shape.firstInput) * parseInt(shape.secondInput);
+      Math.PI * parseInt(shape.firstInput) * parseInt(shape.secondInput);
+    const ellipseToDecimal = ellipseTotalArea.toFixed(2);
 
     // show displayData
-    displayData(shape.shapeName, ellipseTotalArea);
+    displayData(shape.shapeName, ellipseToDecimal);
+  });
+
+// area card
+document.getElementById("shape-box").addEventListener("mouseover", function () {
+  const shapeBox = document.getElementById("shape-box");
+  shapeBox.style.background = randomColor();
+});
+
+// first card
+document
+  .getElementById("shape-box-1")
+  .addEventListener("mouseover", function () {
+    const shapeBox = document.getElementById("shape-box-1");
+    shapeBox.style.background = randomColor();
+  });
+
+// second card
+document
+  .getElementById("shape-box-2")
+  .addEventListener("mouseover", function () {
+    const shapeBox = document.getElementById("shape-box-2");
+    shapeBox.style.background = randomColor();
+  });
+
+// third card
+document
+  .getElementById("shape-box-3")
+  .addEventListener("mouseover", function () {
+    const shapeBox = document.getElementById("shape-box-3");
+    shapeBox.style.background = randomColor();
+  });
+
+// fourth card
+document
+  .getElementById("shape-box-4")
+  .addEventListener("mouseover", function () {
+    const shapeBox = document.getElementById("shape-box-4");
+    shapeBox.style.background = randomColor();
+  });
+
+// fiveth card
+document
+  .getElementById("shape-box-5")
+  .addEventListener("mouseover", function () {
+    const shapeBox = document.getElementById("shape-box-5");
+    shapeBox.style.background = randomColor();
+  });
+
+// sixth card
+document
+  .getElementById("shape-box-6")
+  .addEventListener("mouseover", function () {
+    const shapeBox = document.getElementById("shape-box-6");
+    shapeBox.style.background = randomColor();
   });
