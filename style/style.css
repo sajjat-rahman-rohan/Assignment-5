@@ -19,7 +19,7 @@ p {
 /* blog style */
 .blog-title {
   font-weight: 700;
-  font-size: 100px;
+  font-size: 50px;
 }
 
 /* header style */
@@ -107,10 +107,6 @@ header #header-blog-btn button {
 }
 
 /* area list calculation */
-/* #final-total-area .area-list-btn {
-  font-size: 12px;
-  padding: 6px;
-} */
 
 .shape .shape-box .metter-btn {
   font-size: 14px;

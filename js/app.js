@@ -160,7 +160,7 @@ document
     serial += 1;
 
     const pentagonShapeName = document.getElementById(
-      "rhombus-shape-title"
+      "pentagon-shape-title"
     ).innerText;
 
     const pentagonFirstInput = document.getElementById(
@@ -189,7 +189,6 @@ document
   });
 
 // sixth card
-
 document
   .getElementById("ellipse-card-btn")
   .addEventListener("click", function () {
