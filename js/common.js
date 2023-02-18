@@ -13,14 +13,18 @@ function displayData(triangleShapeName, triangleTotalArea) {
   container.appendChild(tr);
 }
 
-// common function to all data
-function getAllData() {
-  const peraShapeName = document.getElementById("pera-shape-title").innerText;
+// common function to get data using getElementById method
+function getData(shapeTitle, inputFieldOne, inputFieldTow) {
+  // get the data from htm using id
 
-  const peraFirstInput = document.getElementById(
-    "pera-first-input-field"
-  ).value;
-  const peraSecondInput = document.getElementById(
-    "pera-second-input-field"
-  ).value;
+  const shapeName = document.getElementById(shapeTitle).innerText;
+  const firstInput = document.getElementById(inputFieldOne).value;
+  const secondInput = document.getElementById(inputFieldTow).value;
+
+  const shape = {
+    shapeName: shapeName,
+    firstInput: firstInput,
+    secondInput: secondInput,
+  };
+  return shape;
 }

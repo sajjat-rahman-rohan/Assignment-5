@@ -122,33 +122,28 @@ document
 
     serial += 1;
 
-    const rhombusShapeName = document.getElementById(
-      "rhombus-shape-title"
-    ).innerText;
-
-    const rhombusFirstInput = document.getElementById(
-      "rhombus-first-input-field"
-    ).value;
-    const rhombusSecondInput = document.getElementById(
+    const shape = getData(
+      "rhombus-shape-title",
+      "rhombus-first-input-field",
       "rhombus-second-input-field"
-    ).value;
+    );
 
     if (
-      rhombusFirstInput == "" ||
-      rhombusSecondInput == "" ||
-      rhombusFirstInput <= 0 ||
-      rhombusSecondInput <= 0 ||
-      typeof rhombusFirstInput !== "string" ||
-      typeof rhombusSecondInput !== "string"
+      shape.firstInput == "" ||
+      shape.secondInput == "" ||
+      shape.firstInput <= 0 ||
+      shape.secondInput <= 0 ||
+      typeof shape.firstInput !== "string" ||
+      typeof shape.secondInput !== "string"
     ) {
       return alert("please enter any valid number");
     }
 
     const rhombusTotalArea =
-      0.5 * parseInt(rhombusFirstInput) * parseInt(rhombusSecondInput);
+      0.5 * parseInt(shape.firstInput) * parseInt(shape.secondInput);
 
     // show displayData
-    displayData(rhombusShapeName, rhombusTotalArea);
+    displayData(shape.shapeName, rhombusTotalArea);
   });
 
 // fiveth card
@@ -159,33 +154,28 @@ document
 
     serial += 1;
 
-    const pentagonShapeName = document.getElementById(
-      "pentagon-shape-title"
-    ).innerText;
-
-    const pentagonFirstInput = document.getElementById(
-      "pentagon-first-input-field"
-    ).value;
-    const pentagonSecondInput = document.getElementById(
+    const shape = getData(
+      "pentagon-shape-title",
+      "pentagon-first-input-field",
       "pentagon-second-input-field"
-    ).value;
+    );
 
     if (
-      pentagonFirstInput == "" ||
-      pentagonSecondInput == "" ||
-      pentagonFirstInput <= 0 ||
-      pentagonSecondInput <= 0 ||
-      typeof pentagonFirstInput !== "string" ||
-      typeof pentagonSecondInput !== "string"
+      shape.firstInput == "" ||
+      shape.secondInput == "" ||
+      shape.firstInput <= 0 ||
+      shape.secondInput <= 0 ||
+      typeof shape.firstInput !== "string" ||
+      typeof shape.secondInput !== "string"
     ) {
       return alert("please enter any valid number");
     }
 
     const pentagonTotalArea =
-      0.5 * parseInt(pentagonFirstInput) * parseInt(pentagonSecondInput);
+      0.5 * parseInt(shape.firstInput) * parseInt(shape.secondInput);
 
     // show displayData
-    displayData(pentagonShapeName, pentagonTotalArea);
+    displayData(shape.shapeName, pentagonTotalArea);
   });
 
 // sixth card
@@ -196,36 +186,26 @@ document
 
     serial += 1;
 
-    const ellipseShapeName = document.getElementById(
-      "ellipse-shape-title"
-    ).innerText;
-
-    const ellipseFirstInput = document.getElementById(
-      "ellipse-first-input-field"
-    ).value;
-    const ellipseSecondInput = document.getElementById(
+    const shape = getData(
+      "ellipse-shape-title",
+      "ellipse-first-input-field",
       "ellipse-second-input-field"
-    ).value;
+    );
 
     if (
-      ellipseFirstInput == "" ||
-      ellipseSecondInput == "" ||
-      ellipseFirstInput <= 0 ||
-      ellipseSecondInput <= 0 ||
-      typeof ellipseFirstInput !== "string" ||
-      typeof ellipseSecondInput !== "string"
+      shape.firstInput == "" ||
+      shape.secondInput == "" ||
+      shape.firstInput <= 0 ||
+      shape.secondInput <= 0 ||
+      typeof shape.firstInput !== "string" ||
+      typeof shape.secondInput !== "string"
     ) {
       return alert("please enter any valid number");
     }
 
     const ellipseTotalArea =
-      0.5 * parseInt(ellipseFirstInput) * parseInt(ellipseSecondInput);
+      0.5 * parseInt(shape.firstInput) * parseInt(shape.secondInput);
 
     // show displayData
-    displayData(ellipseShapeName, ellipseTotalArea);
+    displayData(shape.shapeName, ellipseTotalArea);
   });
-
-// getalldata
-document.getElementById("pera-card-btn").addEventListener("click", function () {
-  serial += 1;
-});
