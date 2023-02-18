@@ -113,10 +113,12 @@ header #header-blog-btn button {
 } */
 
 .shape .shape-box .metter-btn {
-  font-size: 12px;
-  padding: 4px 20px;
+  font-size: 14px;
+  padding: 6px 20px;
+  margin-top: 6px;
+  width: 100%;
 }
 
-.shape-box .input-table {
+.shape .shape-box .input-table {
   overflow: auto;
 }

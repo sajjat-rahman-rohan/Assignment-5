@@ -7,12 +7,13 @@ function displayData(triangleShapeName, triangleTotalArea) {
           <td>${serial}.</td>
           <td>${triangleShapeName}</td>
           <td>${triangleTotalArea}cm<sup>2</sup></td>
-          <button class="metter-btn">Covert to m<sup>2</sup></button>
+          <td><button class="metter-btn mt-1 mb-1">Covert to m<sup>2</sup></button></td>
         `;
 
   container.appendChild(tr);
 }
 
+// common function to all data
 function getAllData() {
   const peraShapeName = document.getElementById("pera-shape-title").innerText;
 

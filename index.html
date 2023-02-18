@@ -17,6 +17,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+
+    <!-- tailwindcss link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +37,7 @@
     <link rel="stylesheet" href="./style/responsive.css" />
   </head>
   <body>
-    <header class="container mt-5">
+    <header class="container pt-4">
       <!-- header start  -->
       <section class="header">
         <div class="container">
@@ -51,14 +59,14 @@
     </header>
 
     <main>
-      <section class="shape mb-5 pb-4">
+      <section class="shape pb-5 pb-4">
         <div class="container">
           <div class="shape-main">
             <div class="row g-4 mt-3 text-center">
               <!-- first card  -->
               <div class="col-3">
                 <div class="shape-box">
-                  <img src="./images/triangle.png" class="w-75" alt="" />
+                  <img src="./images/triangle.png" class="w-75 m-auto" alt="" />
                   <h3 id="triangle-shape-title" class="shape-title">
                     Triangle
                   </h3>
@@ -94,7 +102,11 @@
               <!-- second card  -->
               <div class="col-3">
                 <div class="shape-box">
-                  <img src="./images/rectangle.png" class="w-75" alt="" />
+                  <img
+                    src="./images/rectangle.png"
+                    class="w-75 m-auto"
+                    alt=""
+                  />
                   <h3 id="rectangle-shape-title" class="shape-title">
                     Rectangle
                   </h3>
@@ -129,7 +141,11 @@
               <!-- third card  -->
               <div class="col-3">
                 <div class="shape-box">
-                  <img src="./images/parallelogram.png" class="w-75" alt="" />
+                  <img
+                    src="./images/parallelogram.png"
+                    class="w-75 m-auto"
+                    alt=""
+                  />
                   <h3 id="pera-shape-title" class="shape-title">
                     Parallelogram
                   </h3>
@@ -161,11 +177,11 @@
                   </div>
                 </div>
               </div>
-              <!-- fourth card  -->
+              <!-- area card  -->
               <div class="col-3">
                 <div class="shape-box">
                   <h1 class="shape-title area-title">
-                    <u>Area Calculation : <span id="total-product">0 </span></u>
+                    <u>Area Calculation </u>
                   </h1>
                   <div class="input-table">
                     <table class="table w-full">
@@ -191,11 +207,11 @@
               </div>
             </div>
             <div class="row g-4 mt-3 text-center">
-              <!-- fiveth card -->
+              <!--fourth card -->
               <div class="col-3">
                 <div class="shape-box">
-                  <img src="./images/rhombus.png" class="w-75" alt="" />
-                  <h3 class="shape-title">Rhombus</h3>
+                  <img src="./images/rhombus.png" class="w-75 m-auto" alt="" />
+                  <h3 id="rhombus-shape-title" class="shape-title">Rhombus</h3>
                   <p class="shape-sub-title">
                     Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub>
                   </p>
@@ -205,7 +221,7 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id=""
+                        id="rhombus-first-input-field"
                         placeholder="d1"
                       />
                       <span>cm</span>
@@ -215,22 +231,24 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id=""
+                        id="rhombus-second-input-field"
                         placeholder="d2"
                       />
                       <span>cm</span>
                     </div>
                   </div>
-                  <div class="shape-area-cal-btn">
+                  <div id="rhombus-card-btn">
                     <button>Calculate</button>
                   </div>
                 </div>
               </div>
-              <!-- sixth card -->
+              <!--   fiveth  card -->
               <div class="col-3">
                 <div class="shape-box">
                   <img src="./images/pentagon.png" class="w-75" alt="" />
-                  <h3 class="shape-title">Pentagon</h3>
+                  <h3 id="pentagon-shape-title" class="shape-title">
+                    Pentagon
+                  </h3>
                   <p class="shape-sub-title">Area (A) = 0.5 × p × b</p>
                   <div class="input-box d-flex justify-content-between">
                     <div>
@@ -238,7 +256,7 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id=""
+                        id="pentagon-first-input-field"
                         placeholder="p"
                       />
                       <span>cm</span>
@@ -248,22 +266,22 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id=""
+                        id="pentagon-first-input-field"
                         placeholder="b"
                       />
                       <span>cm</span>
                     </div>
                   </div>
-                  <div class="shape-area-cal-btn">
+                  <div id="pentagon-card-btn">
                     <button>Calculate</button>
                   </div>
                 </div>
               </div>
-              <!-- last card  -->
+              <!--  sixth card  -->
               <div class="col-3">
                 <div class="shape-box">
                   <img src="./images/ellipse.png" class="w-75" alt="" />
-                  <h3 class="shape-title">Ellipse</h3>
+                  <h3 id="ellipse-shape-title" class="shape-title">Ellipse</h3>
                   <p class="shape-sub-title">Area (A) = &#960; ab</p>
                   <div class="input-box d-flex justify-content-between">
                     <div>
@@ -271,7 +289,7 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id=""
+                        id="ellipse-first-input-field"
                         placeholder="a"
                       />
                       <span>cm</span>
@@ -281,13 +299,13 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id=""
+                        id="ellipse-second-input-field"
                         placeholder="a"
                       />
                       <span>cm</span>
                     </div>
                   </div>
-                  <div class="shape-area-cal-btn">
+                  <div id="ellipse-card-btn">
                     <button>Calculate</button>
                   </div>
                 </div>
@@ -306,7 +324,6 @@
     ></script>
 
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
