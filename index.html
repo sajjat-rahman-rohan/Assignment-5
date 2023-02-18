@@ -66,7 +66,7 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id="first-input-field"
+                        id="triangle-first-input-field"
                         placeholder="b"
                       />
                       <span>cm</span>
@@ -77,13 +77,83 @@
                         class="w-50"
                         type="number"
                         name=""
-                        id="second-input-field"
+                        id="triangle-second-input-field"
                         placeholder="h"
                       />
                       <span>cm</span>
                     </div>
                   </div>
-                  <div id="area-calculate-btn" class="shape-area-cal-btn">
+                  <div
+                    id="triangle-area-calculate-btn"
+                    class="shape-area-cal-btn"
+                  >
+                    <button>Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="shape-box">
+                  <img src="./images/rectangle.png" class="w-75" alt="" />
+                  <h3 class="shape-title">Rectangle</h3>
+                  <p class="shape-sub-title">Area (A) = w × I</p>
+                  <div class="input-box d-flex justify-content-between">
+                    <div>
+                      <input
+                        class="w-50"
+                        type="number"
+                        name=""
+                        id="rectangle-first-input-field"
+                        placeholder="w"
+                      />
+                      <span>cm</span>
+                    </div>
+                    <div>
+                      <input
+                        class="w-50"
+                        type="number"
+                        name=""
+                        id="rectangle-second-input-field"
+                        placeholder="l"
+                      />
+                      <span>cm</span>
+                    </div>
+                  </div>
+                  <div
+                    id="rectangle-area-calculate-btn"
+                    class="shape-area-cal-btn"
+                  >
+                    <button>Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="shape-box">
+                  <img src="./images/parallelogram.png" class="w-75" alt="" />
+                  <h3 class="shape-title">Parallelogram</h3>
+                  <p class="shape-sub-title">Area (A) = b × h</p>
+                  <div class="input-box d-flex justify-content-between">
+                    <div>
+                      <input
+                        class="w-50"
+                        type="number"
+                        name=""
+                        id="pera-first-input-field"
+                        placeholder="b"
+                      />
+                      <span>cm</span>
+                    </div>
+                    <div>
+                      <input
+                        class="w-50"
+                        type="number"
+                        name=""
+                        id="pera-second-input-field"
+                        placeholder="h"
+                      />
+                      <span>cm</span>
+                    </div>
+                  </div>
+                  <div id="pera-area-calculate-btn" class="shape-area-cal-btn">
                     <button>Calculate</button>
                   </div>
                 </div>
@@ -98,8 +168,18 @@
                     id="area-list"
                     class="d-flex gap-4 align-items-center justify-content-between"
                   >
-                    <li id="list-title"></li>
-                    <p id="triangle-total-area"></p>
+                    <li id="first-list-title"></li>
+                    <p id="first-triangle-total-area"></p>
+                    <button class="area-list-btn">
+                      Covert to m<sup>2</sup>
+                    </button>
+                  </ol>
+                  <ol
+                    id="area-list"
+                    class="d-flex gap-3 align-items-center justify-content-between"
+                  >
+                    <li id="second-list-title"></li>
+                    <p id="second-rectangle-total-area"></p>
                     <button class="area-list-btn">
                       Covert to m<sup>2</sup>
                     </button>
